@@ -1,0 +1,47 @@
+html{
+    font: menu;
+    background-color: white !important;
+}
+
+body{
+    margin: 0px;
+}
+
+.main-content{
+    margin-left: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 18px 23px 0 #615f5f;
+    background-color: gray;
+    color: white;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li{
+    padding: 10px;
+}
+
+.facts-list > li{
+    padding: 8px 5px;
+}
+
+.nav-logo{
+    width: 60px;
+}
+
+.footer{
+    background-color: dimgray;
+}
+
+.footer-copyright{
+    margin-left: 5px;
+    color: white;
+}

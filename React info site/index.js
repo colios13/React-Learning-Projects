@@ -1,9 +1,9 @@
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="https://miro.medium.com/fit/c/184/184/1*K0a7xINk0RM5gfXGSN68cw.png" width="40px" />
-                <ul>
+            <nav className="nav">
+                <img className="nav-logo" src="https://miro.medium.com/fit/c/184/184/1*K0a7xINk0RM5gfXGSN68cw.png"/>
+                <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
                     <li>Contact</li>
@@ -15,17 +15,17 @@ function Header() {
 
 function Footer() {
     return (
-        <footer>
-            <small>© 2023 Colios development. All right reserved.</small>
+        <footer className="footer">
+            <small className="footer-copyright">© 2023 Colios development. All right reserved.</small>
         </footer>
     )
 }
 
 function MainContent() {
     return (
-        <div>
+        <div className="main-content">
             <h1>Fun facts about React</h1>
-            <ul>
+            <ul className="facts-list">
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 100K stars on GitHub</li>
