@@ -1,7 +1,29 @@
-function Page(){
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="https://miro.medium.com/fit/c/184/184/1*K0a7xINk0RM5gfXGSN68cw.png" width="40px" />
+                <ul>
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2023 Colios development. All right reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <img src="https://miro.medium.com/fit/c/184/184/1*K0a7xINk0RM5gfXGSN68cw.png" width="40px" />
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -14,4 +36,10 @@ function Page(){
     )
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"))
+ReactDOM.render(
+<div>
+    <Header />
+    <MainContent />
+    <Footer />
+</div>
+, document.getElementById("root"))
