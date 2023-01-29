@@ -36,10 +36,14 @@ function MainContent() {
     )
 }
 
-ReactDOM.render(
-<div>
-    <Header />
-    <MainContent />
-    <Footer />
-</div>
-, document.getElementById("root"))
+function App(){
+    return (
+    <div>
+        <Header />
+        <MainContent />
+        <Footer />
+    </div>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById("root"))
