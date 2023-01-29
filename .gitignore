@@ -1,1 +1,23 @@
-react-info-site/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+airbnb-experience-clone/node_modules/
+airbnb-experience-clone/.pnp
+airbnb-experience-clone/pnp.js
+
+# testing
+airbnb-experience-clone/coverage/
+
+# production
+airbnb-experience-clone/build/
+
+# misc
+airbnb-experience-clone/.DS_Store
+airbnb-experience-clone/.env.local
+airbnb-experience-clone/.env.development.local
+airbnb-experience-clone/.env.test.local
+airbnb-experience-clone/.env.production.local
+
+airbnb-experience-clone/npm-debug.log*
+airbnb-experience-clone/yarn-debug.log*
+airbnb-experience-clone/yarn-error.log*
