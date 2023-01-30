@@ -3,12 +3,15 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #33373E;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/** Navbar **/
 
 nav {
   display: flex;
@@ -37,4 +40,36 @@ nav {
 .nav--icon {
   height: 30px;
   margin-right: 7px;
+}
+
+/** Main **/
+
+main {
+  color:white;
+  text-align: initial;
+  padding-left: 25px;
+  background-image: url("https://miro.medium.com/fit/c/184/184/1*K0a7xINk0RM5gfXGSN68cw.png");
+  background-repeat: no-repeat;
+  background-position: top 100px right -130px;
+  background-size: 250px;
+}
+
+.main--title {
+  margin: 0;
+  margin-top: 45px;
+  letter-spacing: -0.05em;
+  font-size: 39px;
+}
+
+.main--facts_list {
+  max-width: 400px;
+}
+
+.main--facts_list > li {
+  padding-block: 10px;
+}
+
+.main--facts_list > li::marker {
+  color: #61DAFB;
+  font-size: 1.4rem;
 }
