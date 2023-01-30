@@ -1,5 +1,30 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# react-info-site-v2
+# dependencies
+react-info-site-v2/node_modules/
+react-info-site-v2/.pnp
+react-info-site-v2/pnp.js
+
+# testing
+react-info-site-v2/coverage/
+
+# production
+react-info-site-v2/build/
+
+# misc
+react-info-site-v2/.DS_Store
+react-info-site-v2/.env.local
+react-info-site-v2/.env.development.local
+react-info-site-v2/.env.test.local
+react-info-site-v2/.env.production.local
+
+react-info-site-v2/npm-debug.log*
+react-info-site-v2/yarn-debug.log*
+react-info-site-v2/yarn-error.log*
+
+
+# airbnb-experience-clone
 # dependencies
 airbnb-experience-clone/node_modules/
 airbnb-experience-clone/.pnp
