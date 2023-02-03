@@ -46,3 +46,26 @@ airbnb-experience-clone/.env.production.local
 airbnb-experience-clone/npm-debug.log*
 airbnb-experience-clone/yarn-debug.log*
 airbnb-experience-clone/yarn-error.log*
+
+# digital-business-card
+# dependencies
+digital-business-card/node_modules/
+digital-business-card/.pnp
+digital-business-card/pnp.js
+
+# testing
+digital-business-card/coverage/
+
+# production
+digital-business-card/build/
+
+# misc
+digital-business-card/.DS_Store
+digital-business-card/.env.local
+digital-business-card/.env.development.local
+digital-business-card/.env.test.local
+digital-business-card/.env.production.local
+
+digital-business-card/npm-debug.log*
+digital-business-card/yarn-debug.log*
+digital-business-card/yarn-error.log*
