@@ -1,8 +1,10 @@
+import EarthIcon from "../earth-icon.png"
+
 function Navbar() {
     return ( 
-        <nav>
-            <img alt="earth icon" />
-            <h3>my desired travel places</h3>
+        <nav className="navbar">
+            <img className="navbar--image" alt="earth icon" src={EarthIcon}/>
+            <h3 className="navbar--text">my desired travel places</h3>
         </nav>
      );
 }
