@@ -32,7 +32,7 @@ let Data = [
         title: "Group Mountain Biking",
         description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
         price: 50,
-        coverImg: "mountain-bike.png",
+        coverImg: "mountain-bike.jpg",
         altImg: "mountain bike",
         stats: {
             rating: 4.8,
