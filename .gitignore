@@ -24,6 +24,30 @@ react-info-site-v2/yarn-debug.log*
 react-info-site-v2/yarn-error.log*
 
 
+# digital-business-card
+# dependencies
+digital-business-card/node_modules/
+digital-business-card/.pnp
+digital-business-card/pnp.js
+
+# testing
+digital-business-card/coverage/
+
+# production
+digital-business-card/build/
+
+# misc
+digital-business-card/.DS_Store
+digital-business-card/.env.local
+digital-business-card/.env.development.local
+digital-business-card/.env.test.local
+digital-business-card/.env.production.local
+
+digital-business-card/npm-debug.log*
+digital-business-card/yarn-debug.log*
+digital-business-card/yarn-error.log*
+
+
 # airbnb-experience-clone
 # dependencies
 airbnb-experience-clone/node_modules/
@@ -47,25 +71,26 @@ airbnb-experience-clone/npm-debug.log*
 airbnb-experience-clone/yarn-debug.log*
 airbnb-experience-clone/yarn-error.log*
 
-# digital-business-card
+
+# travel-jounal
 # dependencies
-digital-business-card/node_modules/
-digital-business-card/.pnp
-digital-business-card/pnp.js
+travel-jounal/node_modules/
+travel-jounal/.pnp
+travel-jounal/pnp.js
 
 # testing
-digital-business-card/coverage/
+travel-jounal/coverage/
 
 # production
-digital-business-card/build/
+travel-jounal/build/
 
 # misc
-digital-business-card/.DS_Store
-digital-business-card/.env.local
-digital-business-card/.env.development.local
-digital-business-card/.env.test.local
-digital-business-card/.env.production.local
+travel-jounal/.DS_Store
+travel-jounal/.env.local
+travel-jounal/.env.development.local
+travel-jounal/.env.test.local
+travel-jounal/.env.production.local
 
-digital-business-card/npm-debug.log*
-digital-business-card/yarn-debug.log*
-digital-business-card/yarn-error.log*
+travel-jounal/npm-debug.log*
+travel-jounal/yarn-debug.log*
+travel-jounal/yarn-error.log*
