@@ -6,6 +6,7 @@ import Data from './data';
 
 let cards = Data.map(element => 
   <Card
+    key= {element.id}
     imgAlt={element.imgAlt}
     imgSrc={element.coverImg}
     rating={element.stats.rating}
@@ -13,6 +14,8 @@ let cards = Data.map(element =>
     country={element.location}
     title={element.title}
     price={element.price}
+    openSpots={element.openSpots}
+    location={element.location}
   />
 )
 
