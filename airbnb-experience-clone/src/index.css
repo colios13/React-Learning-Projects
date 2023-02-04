@@ -4,9 +4,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +12,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.grey {
+  color:#918E9B;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 nav {
@@ -47,4 +53,23 @@ section {
 
 .hero--text {
   margin-top: 0;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.card--image {
+  width: 100%;
+}
+
+.card--rating-country {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
 }
