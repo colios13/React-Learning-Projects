@@ -4,18 +4,10 @@ import Hero from './components/Hero';
 import Card from './components/Card';
 import Data from './data';
 
-let cards = Data.map(element => 
+let cards = Data.map(item => 
   <Card
-    key= {element.id}
-    imgAlt={element.imgAlt}
-    imgSrc={element.coverImg}
-    rating={element.stats.rating}
-    reviewCount={element.stats.reviewCount}
-    country={element.location}
-    title={element.title}
-    price={element.price}
-    openSpots={element.openSpots}
-    location={element.location}
+    key={item.id}
+    item={item}
   />
 )
 
