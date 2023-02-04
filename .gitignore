@@ -72,25 +72,25 @@ airbnb-experience-clone/yarn-debug.log*
 airbnb-experience-clone/yarn-error.log*
 
 
-# travel-jounal
+# desired-travel-places
 # dependencies
-travel-jounal/node_modules/
-travel-jounal/.pnp
-travel-jounal/pnp.js
+desired-travel-places/node_modules/
+desired-travel-places/.pnp
+desired-travel-places/pnp.js
 
 # testing
-travel-jounal/coverage/
+desired-travel-places/coverage/
 
 # production
-travel-jounal/build/
+desired-travel-places/build/
 
 # misc
-travel-jounal/.DS_Store
-travel-jounal/.env.local
-travel-jounal/.env.development.local
-travel-jounal/.env.test.local
-travel-jounal/.env.production.local
+desired-travel-places/.DS_Store
+desired-travel-places/.env.local
+desired-travel-places/.env.development.local
+desired-travel-places/.env.test.local
+desired-travel-places/.env.production.local
 
-travel-jounal/npm-debug.log*
-travel-jounal/yarn-debug.log*
-travel-jounal/yarn-error.log*
+desired-travel-places/npm-debug.log*
+desired-travel-places/yarn-debug.log*
+desired-travel-places/yarn-error.log*
