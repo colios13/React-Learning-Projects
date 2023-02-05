@@ -30,8 +30,8 @@ function Meme() {
                     Get a new meme image
                     <img className="form--submit-img" alt="valley painting" src={ValleyPainting} />
                 </button>
-                <img alt="random popular meme" src={memeImage} />
             </div>
+            <img className="meme-img" alt="random popular meme" src={memeImage} />
         </main>
      );
 }

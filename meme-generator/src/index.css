@@ -94,3 +94,8 @@ code {
   /* other solution vertical-align: middle; simple but make it a bit too low */
 
 }
+
+.meme-img {
+  margin-top: 30px;
+  max-width: 100%;
+}
