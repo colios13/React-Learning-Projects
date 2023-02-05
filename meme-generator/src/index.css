@@ -23,6 +23,10 @@ code {
   border: solid 2px grey;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -72,7 +76,6 @@ code {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.05em;
-  
   
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   width: 100%;
