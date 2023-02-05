@@ -1,9 +1,19 @@
 import ValleyPainting from "../valley-painting.png"
+import memesData from "../memesData";
+import React from 'react';
 
 function Meme() {
+    const [memeImage, setMemeImage] = React.useState("");
+
+    function getMemeImage() {
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        setMemeImage(memesArray[randomNumber].url)
+    }
+
     return (
         <main className='main'>
-            <form className="form" method="POST" action="">
+            <div className="form">
                 <div className="form--input-text">
                     <input className="input-text" 
                         id="top-sentence" 
@@ -16,11 +26,12 @@ function Meme() {
                         placeholder="Bottom text"
                     />
                 </div>
-                <button className="form--submit">
+                <button className="form--submit" onClick={getMemeImage}>
                     Get a new meme image
                     <img className="form--submit-img" alt="valley painting" src={ValleyPainting} />
                 </button>
-            </form>
+                <img alt="random popular meme" src={memeImage} />
+            </div>
         </main>
      );
 }
