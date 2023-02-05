@@ -3,12 +3,22 @@ import memesData from "../memesData";
 import React from 'react';
 
 function Meme() {
-    const [memeImage, setMemeImage] = React.useState("http://i.imgflip.com/1bij.jpg");
+    const [meme, setMeme] = React.useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "http://i.imgflip.com/1bij.jpg"
+    });
+
+    const [allMemesImages, setAllMemesImages] = React.useState({memesData})
 
     function getMemeImage() {
-        const memesArray = memesData.data.memes
+        const memesArray = allMemesImages.memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        setMemeImage(memesArray[randomNumber].url)
+        setMeme({ 
+            topText: "",
+            bottomText: "",
+            randomImage: memesArray[randomNumber].url
+        })
     }
 
     return (
@@ -31,7 +41,7 @@ function Meme() {
                     <img className="form--submit-img" alt="valley painting" src={ValleyPainting} />
                 </button>
             </div>
-            <img className="meme-img" alt="random popular meme" src={memeImage} />
+            <img className="meme-img" alt="random popular meme" src={meme.randomImage} />
         </main>
      );
 }
