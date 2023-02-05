@@ -94,3 +94,26 @@ desired-travel-places/.env.production.local
 desired-travel-places/npm-debug.log*
 desired-travel-places/yarn-debug.log*
 desired-travel-places/yarn-error.log*
+
+# meme-generator
+# dependencies
+meme-generator/node_modules/
+meme-generator/.pnp
+meme-generator/pnp.js
+
+# testing
+meme-generator/coverage/
+
+# production
+meme-generator/build/
+
+# misc
+meme-generator/.DS_Store
+meme-generator/.env.local
+meme-generator/.env.development.local
+meme-generator/.env.test.local
+meme-generator/.env.production.local
+
+meme-generator/npm-debug.log*
+meme-generator/yarn-debug.log*
+meme-generator/yarn-error.log*
