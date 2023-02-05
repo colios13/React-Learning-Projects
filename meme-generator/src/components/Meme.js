@@ -3,7 +3,7 @@ import memesData from "../memesData";
 import React from 'react';
 
 function Meme() {
-    const [memeImage, setMemeImage] = React.useState("");
+    const [memeImage, setMemeImage] = React.useState("http://i.imgflip.com/1bij.jpg");
 
     function getMemeImage() {
         const memesArray = memesData.data.memes
