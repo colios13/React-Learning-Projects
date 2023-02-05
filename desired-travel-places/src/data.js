@@ -36,7 +36,7 @@ let data = [
             mapsUrl: "https://www.google.com/maps/place/Mont+Blanc"
         },
         title: "Mont Blanc",
-        description: "Mont Blanc is the highest mountain in the Alps and Western Europe, rising 4,807.81 m (15,774 ft) above sea level, located on the French-Italian border. The Mont Blanc massif is popular for outdoor activities like hiking, climbing, trail running and winter sports like skiing, and snowboarding. This is also the playground of the most prestigious ultra-trail, the UTMB."
+        description: "Mont Blanc is the highest mountain in the Alps and Western Europe, rising 4,807 m (15,774 ft) above sea level, located on the French-Italian border. The Mont Blanc massif is popular for outdoor activities like hiking, climbing, trail running and winter sports. This is also the playground of the most prestigious ultra-trail, the UTMB."
     }
 ]
 

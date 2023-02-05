@@ -7,8 +7,8 @@ function Card(props) {
             <div className="card--text">
                 <div className="card--location">
                     <img className="card--marker" alt="marker" src={Marker}/>
-                    <span>{props.location.country}</span>
-                    <a className="grey" href={props.location.mapsUrl}>View on Google Maps</a>
+                    <span className="card--country">{props.location.country}</span>
+                    <a className="card--maps-url grey" href={props.location.mapsUrl}>View on Google Maps</a>
                 </div>
                 <h1 className="card--title">{props.title}</h1>
                 <p className="card--description">{props.description}</p>

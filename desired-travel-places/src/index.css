@@ -10,6 +10,10 @@ code {
     monospace;
 }
 
+.grey {
+  color: grey;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -17,16 +21,71 @@ code {
   gap: 10px;
   justify-content: center;
   color: white;
-  height: 75px;
+  height: 60px;
 }
 
 .navbar--image {
-  width: 36px;
+  width: 30px;
 }
 
 .navbar--text {
   font-weight: 500;
-  font-size: 23px;
-  line-height: 18px;
+  font-size: 20.5px;
+  line-height: 15px;
   letter-spacing: -0.075em;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 45px 40px;
+  text-align: left;
+}
+
+.card {
+  display: flex;
+  max-height: 24.5dvh;
+  gap: 20px;
+}
+
+.card--image {
+  max-width: 250px;
+  height: auto;
+  width: auto;
+  border-radius: 9px;
+}
+
+.card--text {
+  margin-top: 10px;
+  min-width: 395px;
+}
+
+.card--location {
+  display: flex;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.card--country {
+  letter-spacing: 0.17em;
+  color: #2B283A;
+}
+
+.card--maps-url {
+  margin-left: 10px;
+}
+
+.card--title {
+  margin: 5px 0px 20px 0px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.card--description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 }
