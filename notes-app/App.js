@@ -6,6 +6,7 @@ import Split from "react-split"
 import {nanoid} from "nanoid"
 
 export default function App() {
+    console.log(localStorage.getItem("notes"))
     const [notes, setNotes] = React.useState(
         () => JSON.parse(localStorage.getItem("notes")) || []
     )
@@ -27,11 +28,19 @@ export default function App() {
     }
     
     function updateNote(text) {
-        setNotes(oldNotes => oldNotes.map(oldNote => {
-            return oldNote.id === currentNoteId
-                ? { id: oldNote.id, body: text }
-                : oldNote
-        }))
+        // Put the most recently modified note at the top
+        setNotes(oldNotes => {
+            let newArray = [{
+                id: currentNoteId,                    
+                body: text
+            }]
+            for (const elem of oldNotes) {
+                if (elem.id !== currentNoteId) {
+                    newArray.push(elem)
+                }
+            }
+            return newArray
+        })
     }
     
     function findCurrentNote() {
