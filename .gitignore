@@ -125,6 +125,12 @@ react-info-site-v3/node_modules/
 # production
 react-info-site-v3/index.pack.js
 
-notes-app/
+# notes-app
+# dependencies
+notes-app/node_modules/
+
+# production
+notes-app/index.pack.js
+
 
 tenzies/
