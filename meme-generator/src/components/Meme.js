@@ -56,9 +56,11 @@ function Meme() {
                     <img className="form--submit-img" alt="valley painting" src={ValleyPainting} />
                 </button>
             </div>
-            <h2 className="meme--text top">{meme.topText}</h2>
-            <img className="meme-img" alt="random popular meme" src={meme.randomImage} />
-            <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            <div className="meme">
+                <img className="meme--img" alt="random popular meme" src={meme.randomImage} />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
         </main>
      );
 }
