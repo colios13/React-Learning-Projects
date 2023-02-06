@@ -16,8 +16,6 @@ function Meme() {
             .then((data) => setAllMemesImages(() => data.data.memes));
     }, [])
 
-    console.log(allMemesImages)
-
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMemesImages.length)
         setMeme((prevData) => {
