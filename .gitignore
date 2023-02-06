@@ -117,3 +117,14 @@ meme-generator/.env.production.local
 meme-generator/npm-debug.log*
 meme-generator/yarn-debug.log*
 meme-generator/yarn-error.log*
+
+# react-info-site-v3
+# dependencies
+react-info-site-v3/node_modules/
+
+# production
+react-info-site-v3/index.pack.js
+
+notes-app/
+
+tenzies/
