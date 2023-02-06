@@ -1,6 +1,5 @@
 import ValleyPainting from "../valley-painting.png"
-import memesData from "../memesData";
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function Meme() {
     const [meme, setMeme] = React.useState({
@@ -9,16 +8,23 @@ function Meme() {
         randomImage: "http://i.imgflip.com/1bij.jpg"
     });
 
-    const [allMemesImages, setAllMemesImages] = React.useState({memesData})
+    const [allMemesImages, setAllMemesImages] = React.useState([])
+
+    useEffect(() => {
+        fetch('https://api.imgflip.com/get_memes')
+            .then((response) => response.json())
+            .then((data) => setAllMemesImages(() => data.data.memes));
+    }, [])
+
+    console.log(allMemesImages)
 
     function getMemeImage() {
-        const memesArray = allMemesImages.memesData.data.memes
-        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        const randomNumber = Math.floor(Math.random() * allMemesImages.length)
         setMeme((prevData) => {
             return { 
                 topText: prevData.topText,
                 bottomText: prevData.bottomText,
-                randomImage: memesArray[randomNumber].url
+                randomImage: allMemesImages[randomNumber].url
             }
         })
     }
