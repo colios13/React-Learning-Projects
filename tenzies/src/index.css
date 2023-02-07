@@ -1,9 +1,26 @@
 body {
   margin: 0;
+  background-color:#0B2434;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.main {
+  margin: auto;
+  background-color: #acacac;
+  width: 500px;
+  height: 500px;
+  border-radius: 9px;
+  text-align: center;
 }
