@@ -95,6 +95,7 @@ desired-travel-places/npm-debug.log*
 desired-travel-places/yarn-debug.log*
 desired-travel-places/yarn-error.log*
 
+
 # meme-generator
 # dependencies
 meme-generator/node_modules/
@@ -118,6 +119,7 @@ meme-generator/npm-debug.log*
 meme-generator/yarn-debug.log*
 meme-generator/yarn-error.log*
 
+
 # react-info-site-v3
 # dependencies
 react-info-site-v3/node_modules/
@@ -133,4 +135,25 @@ notes-app/node_modules/
 notes-app/index.pack.js
 
 
-tenzies/
+# tenzies
+# dependencies
+tenzies/node_modules/
+tenzies/.pnp
+tenzies/pnp.js
+
+# testing
+tenzies/coverage/
+
+# production
+tenzies/build/
+
+# misc
+tenzies/.DS_Store
+tenzies/.env.local
+tenzies/.env.development.local
+tenzies/.env.test.local
+tenzies/.env.production.local
+
+tenzies/npm-debug.log*
+tenzies/yarn-debug.log*
+tenzies/yarn-error.log*
