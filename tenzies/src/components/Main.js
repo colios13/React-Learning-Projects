@@ -25,6 +25,15 @@ function Main() {
         )
     }
 
+    function rollDice() {
+        setDice(oldDices => 
+            oldDices.map(dice => ({
+                ...dice,
+                number: dice.isHeld ? dice.number : Math.ceil(Math.random() * 6)
+            }))
+        )
+    }
+
     const diceElements = dice.map((dice) => 
         <Dice 
             key={dice.id} 
@@ -42,6 +51,7 @@ function Main() {
                 <section className="main--dice-container">
                     {diceElements}
                 </section>
+                <button onClick={rollDice}>Roll</button>
             </div>
         </main>
      );
