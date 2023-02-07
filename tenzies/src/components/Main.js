@@ -1,17 +1,31 @@
+import React from "react";
 import Dice from "./Dice";
 
 function Main() {
-    let allDice = []
-    for (let j = 0; j < 10; j++) {
-        allDice.push(<Dice key={j} number={Math.floor(Math.random()*6)} />)
+    const [dice, setDice] = React.useState(createAllDice())
+
+    function createAllDice() {
+        let allDice = []
+        for (let j = 0; j < 10; j++) {
+            allDice.push({
+                id: j, 
+                number: Math.ceil(Math.random() * 6)
+            })
+        }
+        return allDice
     }
+
+    const diceElements = dice.map((dice) => 
+        <Dice key={dice.id} number={dice.number} />
+    )
 
     return ( 
         <main className="main">
             <div className="main--content">
-                <h2 className="main--title">Tenzies</h2>
+                <h1 className="main--title">Tenzies</h1>
+                <p>Roll until all dice are the same. Click each dice to freeze it at its current value between rolls</p>
                 <section className="main--dice-container">
-                    {allDice}
+                    {diceElements}
                 </section>
             </div>
         </main>
