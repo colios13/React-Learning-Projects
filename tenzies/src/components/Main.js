@@ -36,12 +36,24 @@ function Main() {
     }
 
     function rollDice() {
-        setDice(oldDices => 
-            oldDices.map(dice => ({
-                ...dice,
-                number: dice.isHeld ? dice.number : Math.ceil(Math.random() * 6)
-            }))
-        )
+        if (tenzies) {
+            setDice(oldDices => 
+                oldDices.map(dice => ({
+                    ...dice,
+                    number: Math.ceil(Math.random() * 6),
+                    isHeld: false
+                }))
+            )
+            setTenzies(() => false)
+        }
+        else {
+            setDice(oldDices => 
+                oldDices.map(dice => ({
+                    ...dice,
+                    number: dice.isHeld ? dice.number : Math.ceil(Math.random() * 6)
+                }))
+            )
+        }
     }
 
     const diceElements = dice.map((dice) => 
@@ -55,7 +67,7 @@ function Main() {
 
     return ( 
         <main className="main">
-            {tenzies && <Confetti numberOfPieces={2500} tweenDuration={50000} recycle={false} />}
+            {tenzies && <Confetti numberOfPieces={1500} tweenDuration={50000} recycle={false} />}
             <h1 className="main--title">Tenzies</h1>
             <p className="main--instructions">
                 Roll until all dice are the same. Click each dice to freeze it at its current value between rolls.</p>
