@@ -1,5 +1,4 @@
 function Dice(props) {
-    console.log(props.isHeld)
     return ( 
     <div className={props.isHeld ? "dice helded" : "dice"} 
         onClick={() => props.holdDice(props.id)}>
