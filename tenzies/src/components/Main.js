@@ -9,14 +9,29 @@ function Main() {
         for (let j = 0; j < 10; j++) {
             allDice.push({
                 id: j, 
-                number: Math.ceil(Math.random() * 6)
+                number: Math.ceil(Math.random() * 6),
+                isHeld: false
             })
         }
         return allDice
     }
 
+    function holdDice(id) {
+        setDice(oldDices => 
+            oldDices.map(dice => ({
+                ...dice,
+                isHeld: dice.id === id ? !dice.isHeld : dice.isHeld
+            }))
+        )
+    }
+
     const diceElements = dice.map((dice) => 
-        <Dice key={dice.id} number={dice.number} />
+        <Dice 
+            key={dice.id} 
+            id={dice.id} 
+            number={dice.number} 
+            isHeld={dice.isHeld}
+            holdDice={holdDice} />
     )
 
     return ( 
