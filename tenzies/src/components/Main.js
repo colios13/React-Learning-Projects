@@ -45,14 +45,13 @@ function Main() {
 
     return ( 
         <main className="main">
-            <div className="main--content">
-                <h1 className="main--title">Tenzies</h1>
-                <p>Roll until all dice are the same. Click each dice to freeze it at its current value between rolls</p>
-                <section className="main--dice-container">
-                    {diceElements}
-                </section>
-                <button onClick={rollDice}>Roll</button>
-            </div>
+            <h1 className="main--title">Tenzies</h1>
+            <p className="main--instructions">
+                Roll until all dice are the same. Click each dice to freeze it at its current value between rolls.</p>
+            <section className="main--dice-container">
+                {diceElements}
+            </section>
+            <button className="main--roll-dice" onClick={rollDice}>Roll</button>
         </main>
      );
 }
