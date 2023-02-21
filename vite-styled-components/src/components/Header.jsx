@@ -1,7 +1,9 @@
 import { Container } from "./styles/Container.styled";
-import { Logo, Nav, StyledHeader } from "./styles/Header.styled";
+import { Image, Logo, Nav, StyledHeader } from "./styles/Header.styled";
 import logo from "../images/logo.svg"
+import illustrationMockups from "../images/illustration-mockups.svg"
 import { Button } from "./styles/Button.styled";
+import { Flex } from "./styles/Flex.styled";
 
 
 function Header() {
@@ -12,19 +14,22 @@ function Header() {
           <Logo src={logo} alt='chat icon and Huddle write to it right' />
           <Button>Try it Free</Button>
         </Nav>
-        <div>
-          <h1>Build The Community Your Fans Will Love</h1>
+        <Flex>
+          <div>
+            <h1>Build The Community Your Fans Will Love</h1>
 
-          <p>
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as
-            you engage in genuine discussion.
-          </p>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
 
-          <Button>
-            Get started for free
-          </Button>
-        </div>
+            <Button bg='#ff0099' color='#fff'>
+              Get started for free
+            </Button>
+          </div>
+          <Image src={illustrationMockups} alt='' />
+        </Flex>
       </Container>
     </StyledHeader>
   );
