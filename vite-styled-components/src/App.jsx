@@ -1,7 +1,9 @@
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
+import Card from './components/Card'
 import { Container } from './components/styles/Container.styled'
 import GlobalStyle from './components/styles/Global'
+import content from './content.js'
 
 const theme = {
   colors: {
@@ -18,7 +20,9 @@ function App() {
       <GlobalStyle />
       <Header />
       <Container>
-        <h1>Testing vite and styled-components</h1>
+        {content.map((item, index) => (
+          <Card key={index} item={item} />
+        ))}
       </Container>
     </ThemeProvider>
   )
