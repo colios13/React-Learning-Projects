@@ -157,3 +157,8 @@ tenzies/.env.production.local
 tenzies/npm-debug.log*
 tenzies/yarn-debug.log*
 tenzies/yarn-error.log*
+
+
+# vite-styled-components
+# dependencies
+vite-styled-components/node_modules/
