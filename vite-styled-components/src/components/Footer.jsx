@@ -1,12 +1,14 @@
-
+import SocialIcons from './SocialIcons.jsx'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
+import { StyledFooter } from './styles/Footer.styled'
+import logoWhite from '../images/logo_white.svg'
 
 export default function Footer() {
   return (
-    <>
+    <StyledFooter>
       <Container>
-        <img src='./images/logo_white.svg' alt='' />
+        <img src={logoWhite} alt='chat icon and Huddle write to it right, in white' />
 
         <Flex>
           <ul>
@@ -29,10 +31,11 @@ export default function Footer() {
             <li>Contact Us</li>
           </ul>
 
+          <SocialIcons />
         </Flex>
 
         <p>&copy; 2021 Huddle. All rights reserved</p>
       </Container>
-    </>
+    </StyledFooter>
   )
 }
